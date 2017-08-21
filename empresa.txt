@@ -8,6 +8,6 @@ Maria do Carmo Macêdo - GBD
 Pedro Freite - Dev
 Rhuan Rodrigues - Analista
 Douglas Carvalho - Dev/Teste
-Anderson Cleiton - Analista
-Ewerton Luis - Analista
+Anderson Clayton - Analista
+Everton Luíz - Dev
 
