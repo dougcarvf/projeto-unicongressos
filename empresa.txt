@@ -1,0 +1,10 @@
+Engenharia de Software
+
+Prof.: Leonardo de Souza Lima
+
+Grupo:
+Deivesson Santos - Gerente
+Maria do Carmo Macêdo - GBD
+Pedro Freite - Dev
+Rhuan Rodrigues - Analista
+Douglas Carvalho - Dev/Teste
