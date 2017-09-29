@@ -1,0 +1,163 @@
+Caso de Uso - Fábrica de Software - 6º Período Sistemas de Informação - Centro Universitário Joaquim Nabuco
+
+Tela Menu Inicial
+
+A tela inicial do site, terá a opcão de login para usuários já cadastrados, e para quem não for cadastrado, haverá também uma opção de cadastro.
+
+Função Cadastro
+
+1- O usuário abre a tela de cadastro.
+2- O sistema solicita que o usuário digite seu email, nome, endereço, cpf, cnpj, telefone e senha. [FE-001] [FE-002]
+3- O sistema verifica se já possui cadastro existente com o mesmo cpf e email.[FE-003] 
+5- O sistema solicita que o usuário digite uma senha.
+4- O sistema valida e salva as informações.
+6- O sistema conclui o cadastro. [FA-001]
+
+Função Login
+
+1- O usuário abre a tela de login.
+2- O sistema solicita email e senha.
+3- O sistema verifica se email e senha já estão cadastrados.[FE-004]
+4- O sistema confirma a validação e efetua o acesso no menu principal.
+
+Tela Menu Principal
+
+Menu de acesso a usuários cadastrados, onde terá as opções: meu perfil, congressos, e gerar certificado.               
+
+Função Gerar Certificado
+
+1- O usuário acessa a tela de gerar certificado.
+2- O usuário seleciona de qual palestra ele deseja gerar o certificado.
+2- O sistema verifica se ele esteve presente na palestra. [FE-006]
+3- O sistema gera certificado. [FA-002]
+
+Função Meu Perfil
+
+Menu pessoal do usuário, onde ele poderá ver e alterar suas informações, ou apagar sua conta. Os dados dos usuários que aparecerão serão seus dados de 
+cadastro, além das palestras em que está cadastrado, e certificados anteriores.
+
+Função Editar Dados
+
+1- O usuário acessa a tela meu perfil.
+2- O sistema mostra na tela os atuais dados do participante.
+3- O usuário acessa a tela editar dados.
+4- O sistema mostra na tela os atuais dados do participante. 
+5- O usuário seleciona o dado que deseja alterar. 
+6- O usuário faz a alteração do dado conforme deseja. [FE-002] [FE-003]
+7- O sistema pede a confirmação da edição feita. [FA-003]
+8- O sistema realiza a confirmação e imprime na tela os dados atualizados. [FA-002]
+
+Função Alterar Senha
+
+1- O usuário acessa a tela meu perfil.
+2- O sistema mostra na tela os atuais dados do participante.
+3- O usuário acessa a tela alterar senha.
+4- O sistema solicita que o usuário digite sua senha atual. [FE-007]
+5- O sistema solicita que o usuário digite a nova senha.
+6- O sistema pede a confirmação da edição feita. [FA-003]
+7- O sistema realiza e salva a alteração. [FA-002]
+
+Função Apagar Conta
+
+1- O usuário acessa a tela meu perfil.
+2- O sistema mostra na tela os atuais dados do participante.
+3- Usuario acessa a tela de Apagar Conta.
+4- O sistema pede a confirmação da exclusão do participante. [FA-004]
+5- O sistema realiza a confirmação. [FA-002]     
+
+Função Congressos
+
+Tela do site onde haverão as opções: cadastrar em palestra e criar congresso.
+
+Função Criar Congresso 
+
+1- O organizador acessa a tela de congressos.
+2- O organizador seleciona a opção criar congresso.
+3- O organizador irá inserir um login e uma senha para acessar o congreso. [FE-001] [FE-002]
+4- O organizador define tema, endereço, data, hora e a quantidade de palestras. [FE-001] [FE-002]
+5- O organizador criará a palestra na mesma tela, informando tema, local, data, hora, descrição, nome do palestrante, telefone do palestrante e descrição do palestrante. [FE-001] [FE-002]
+6- O organizador irá clicar em um botão "Criar" para confirmar a criação do congresso. [FA-007] [FA-002]
+
+Função Editar Congresso
+
+1- O organizador acessa a tela de congressos.
+2- O organizar insere login e senha. [FE-001]
+3- O sistema lista todos os congressos criados pelo usuário.
+4- O organizador seleciona o congresso que deseja editar.
+5- O organizador edita informações do congresso ou palestra.
+6- O organizador irá clicar em um botão "Confirmar" para confirmar as alterações feitas. [FA-003] [FA-002] 
+
+Função Excluir Congresso
+
+1- O organizador acessa a tela de congressos.
+2- O organizar insere login e senha. [FE-001]
+2- O sistema lista todos os congressos criados pelo usuário.
+3- O organizador seleciona o congresso que deseja excluir.
+4- O organizador irá clicar em um botão "Excluir" para confirmar a exclusão. [FA-004] [FA-002]
+
+Função Cadastrar em Palestra
+
+1- O usuário acessa a tela congressos.
+2- O usuário seleciona a opção cadastrar em palestra.
+3- O sistema lista todos os congressos atuais.
+4- O usuário seleciona o congresso que deseja visualizar.
+5- O sistema mostra informações básicas sobre o congresso desejado e mostra uma tela de opções.
+6- O sistema lista as palestras e seus horarios disponiveis.
+7- O usuário seleciona a palestra que deseja participar.
+8- O sistema verifica se há disponibilidade e se o usuário já está cadastrado.[FE-005] [FA-005]
+9- O sistema redireciona o usuario para a pagina de pagamento. [FA-006] 
+10- O sistema confirma o cadastro utilizando os dados atuais do participante e se o pagamento foi realizado. [FA-002]
+
+
+
+
+
+
+
+---------------------------------------------------------------##################-----------------------------------------------------------------------
+
+Fluxos de Exceção
+
+[FE-001] Valores vazios: O sistema verifica se os campos de email, nome, cpf e endereço estão vazios. Caso não sejam preenchidos, o sistema deverá imprimir uma mensagem 
+na tela informando a obrigatoriedade do preenchimento daquele dado específico, e ficará travado na página até que o usuário preencha todos os campos exigidos.
+
+[FE-002] Dados não válidos: O sistema verifica se o email e/ou o cpf do usuário são válidos. Caso não sejam, o sistema deverá imprimir 
+uma mensagem na tela informando ao usuário que aquele dado não é valido, e ficará travado na página até que o usuário insira dados válidos.
+
+[FE-003] Dados já cadastrados: O sistema verifica se o email e/ou cpf do usuário já estão cadastrados em outra conta. Se estivrerem, o sistema deverá imprimir uma 
+mensagem na tela informando ao usuário que aquele dado já está cadastrado, e ficará travado na página até que o usuário insira dados não cadastrados.
+
+[FE-004] Login e senha: O sistema verifica se os dados inseridos já estão cadastrados, caso não estejam, o sistema imprime na tela uma mensagem informando ao usuário que ele 
+deve utilizar um email e senha válidos, ou, caso não tenha, realize o cadastro no site.
+
+[FE-005] Palestra indisponível: O sistema verifica se a palestra solicitada pelo usuário já chegou a lotação máxima de pessoas, ou se o usuário já está cadastrado naquela 
+palestra. Em qualquer dos casos sendo verdadeiros, o sistema deverá imprimir na tela uma mensagem informando que a palestra está indisponível. 
+
+[FE-006] Negar Certificado: O sistema irá verificar a palestra da qual o usuário deseja o certificado, e verificar se o mesmo esteve ausente, ou se a 
+palestra ainda não aconteceu. Em qualquer dos casos serem verdadeiros, o sistema deverá imprimir uma mensagem na tela informando ao usuário que aquele 
+certificado não pode ser gerado.
+
+[FE-007] Verificar Senha: O sistema irá verificar se a senha foi digitada corretamente. Caso não seja, o sistema deverá imprimir uma mensagem na tela 
+informando ao usuário que a senha digitada é invalida, e ficará naquela tela até que o usuário digita a senha correta.
+
+[FE-008] Mínimo exigido: Ao criar um congresso, é necessário ter no mínimo uma palestra no mesmo. Caso não possua, 
+
+Fluxos Alternativos
+
+[FA-001] Acesso ao menu inicial: O sistema írá salvar todas os dados da página, e direcionar o usuário ao menu inicial.
+
+[FA-002] Acesso ao menu principal: O sistema deverá ter nessa página um link direcionando ao menu principal.
+
+[FA-003] Confirmar alteração: Deverá aparecer uma caixa de mensagem onde o usuário irá confirmar se quer realmente a alteração do dado. Caso o usuário confirme, o sistema 
+irá realizar a alteração do dado, e será enviada uma mensagem em seu email, informando sobre a alteração, e sobre os dados atuais. Caso cancele, a caixa some, e o usuário 
+volta a tela de alteração.
+
+[FA-004] Confirmar exclusão: Deverá aparecer uma caixa de mensagem onde o usuário irá confirmar se quer realmente a exclusão, informando que irá apagar toda a conta do 
+usuário. Caso o usuário confirme, o sistema irá realizar a exclusão da sua conta. Caso cancele, o sistema o redicionará diretamente ao menu principal.
+
+[FA-005] Confirma Cadastro: Deverá aparecer uma caixa de mensagem onde o usuário irá confirmar se quer realmente efetuar o cadastro. Caso o usuário confirme, o sistema 
+irá realizar o cadastro, e será enviada uma mensagem em seu email, informando sobre a inscrição. Caso cancele, a caixa some, e o usuário é direcionado a tela de congressos.
+
+[FA-006] Verficar se valor de inscrição foi pago.
+
+[FA-007] Confirmar criação: Deverá aparecer uma caixa de mensagem indicando que o congresso e a palestra foram criados com sucesso.
