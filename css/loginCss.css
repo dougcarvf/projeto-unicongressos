@@ -1,0 +1,17 @@
+.formLogin{
+	top:30%;
+	left:30%;
+	position:absolute;
+}
+
+.cadastroUsuario{
+	top: 20%;
+	bottom: 20%;
+	left: 20% ;
+	right: 30%;
+	position: absolute;
+}
+
+.camposFormularios{
+	width: 70%;
+}
